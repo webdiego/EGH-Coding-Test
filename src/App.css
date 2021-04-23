@@ -24,7 +24,7 @@ body{
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 10rem;
 }
 .palette{
 width: 9rem;
@@ -44,6 +44,18 @@ cursor:pointer;
   z-index: 1000;
   opacity: 1;
 }
+.container-mini-palette{
+ 
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+.palette-mini{
+  width: 1px;
+  height: 1px;
+}
 .text{
   text-align: center;
   padding:.4rem;
@@ -51,13 +63,21 @@ cursor:pointer;
   color: white;
   border-radius: 5px;
 }
+.container-info{
+  margin:2rem;
+  text-align: center;
+}
 h1{
   text-align: center;
  margin: 3rem;
- /* background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
- background-clip: text;
-  -webkit-text-fill-color: transparent; */
+ 
 }
+
+p{
+  margin: 2rem 0;
+}
+
+/* BUTTONS */
 .button{
   background-color: rgb(27, 27, 27);
   color: white;
@@ -71,12 +91,18 @@ h1{
   padding: 1rem;
 }
 .button:hover{
-  -webkit-animation: wobble-hor-bottom 0.8s both;
-	        animation: wobble-hor-bottom 0.8s both;
+  -webkit-animation: shake 0.8s both;
+	        animation: shake 0.8s both;
+}
+.zoom{
+  margin:2rem;
+  padding:1rem;
+  border:none;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-
- @-webkit-keyframes wobble-hor-bottom {
+ @-webkit-keyframes shake {
   0%,
   100% {
     -webkit-transform: translateX(0%);
@@ -105,7 +131,7 @@ h1{
             transform: translateX(-6px) rotate(-1.2deg);
   }
 }
-@keyframes wobble-hor-bottom {
+@keyframes shake {
   0%,
   100% {
     -webkit-transform: translateX(0%);
