@@ -8,6 +8,7 @@ body{
   font-family: 'Inconsolata', monospace;
   font-size:62,5%;
 }
+
 .container{
   width: 100%;;
   display:flex;
@@ -16,6 +17,19 @@ body{
   position: fixed;
   z-index: 2000;
   background-color: white;
+}
+.container-info{
+  margin:2rem;
+  text-align: center;
+}
+h1{
+  text-align: center;
+ margin: 3rem;
+ 
+}
+
+p{
+  margin: 2rem 0;
 }
 .container-palette{
   width: 100%;
@@ -44,6 +58,14 @@ cursor:pointer;
   z-index: 1000;
   opacity: 1;
 }
+.text{
+  text-align: center;
+  padding:.4rem;
+  background-color: rgba(0, 0, 0, 0.211);
+  color: white;
+  border-radius: 5px;
+}
+/* Mini palette */
 .container-mini-palette{
  
   display:flex;
@@ -56,26 +78,8 @@ cursor:pointer;
   width: 1px;
   height: 1px;
 }
-.text{
-  text-align: center;
-  padding:.4rem;
-  background-color: rgba(0, 0, 0, 0.211);
-  color: white;
-  border-radius: 5px;
-}
-.container-info{
-  margin:2rem;
-  text-align: center;
-}
-h1{
-  text-align: center;
- margin: 3rem;
- 
-}
 
-p{
-  margin: 2rem 0;
-}
+
 
 /* BUTTONS */
 .button{
