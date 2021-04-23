@@ -14,7 +14,7 @@ function App() {
   const [zoom, setZoom]=useState(false)
   return (
     <>
-      <div className="container">
+      <div className="nav">
         <h1>EGH RGB Colors</h1>
         {zoom && (
 
@@ -24,7 +24,9 @@ function App() {
         )}
       </div>
 
-      <div className="container-info" style={{ marginTop: "10rem" }}>
+     <div className="container">
+
+      <div className="info" style={{ marginTop: "10rem" }}>
         <h2>RGB Color Model</h2>
         <p>
           The RGB color model is an additive color model in which red, green, and blue light are
@@ -55,6 +57,7 @@ function App() {
            Zoom IN/OUT</button>
       </div>
      {!zoom && (
+    
 
       <div className="container-mini-palette">
         {Colors.map((color, i) => (
@@ -62,6 +65,7 @@ function App() {
           </div>
         ))}
       </div> 
+      
      )}
 
       {zoom && (
@@ -77,6 +81,7 @@ function App() {
         ))}
       </div> 
       )}
+     </div>
     </>
   );
 }

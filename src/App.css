@@ -9,7 +9,7 @@ body{
   font-size:62,5%;
 }
 
-.container{
+.nav{
   width: 100%;;
   display:flex;
   align-items:center;
@@ -18,7 +18,14 @@ body{
   z-index: 2000;
   background-color: white;
 }
-.container-info{
+.container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+}
+.info{
   margin:2rem;
   text-align: center;
 }
@@ -43,9 +50,6 @@ p{
 .palette{
 width: 9rem;
 height: 6rem;
-display: flex;
-align-items: center;
-justify-content: center;
 border: 3px solid white;
 border-radius: 10px;
 opacity: .9;
@@ -65,13 +69,13 @@ cursor:pointer;
   color: white;
   border-radius: 5px;
 }
+
 /* Mini palette */
 .container-mini-palette{
- 
+  width: 128px;
+  height:256px;
   display:flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
   margin: 2rem;
 }
 .palette-mini{
